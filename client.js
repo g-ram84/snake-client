@@ -9,8 +9,8 @@ const connect = function () {
 
   conn.on('connect', () => {
     //successfully connected to server
-    console.log('you ded cuz you idled');
-    conn.write('');
+    console.log('Successfully connected to the game server');
+    conn.write('Name: GMC');
   });
 
   return conn;
