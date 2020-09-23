@@ -1,7 +1,10 @@
 const handleUserInput = function(data) {
   if(data == '\u0003') {
     stdin.exit();
-    } 
+  }; 
+  if (data == '1') {
+    connection.write('Say: I\'m number 1!' );
+  }
   if(data == 'w') {
     connection.write('Move: up');
   };
